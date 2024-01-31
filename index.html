@@ -7,21 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>library</h1>
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Pages</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>The Hobbit</td>
-            <td>J.R.R. Tolkien</td>
-            <td>295</td>
-            <td>not read yet</td>
-        </tr>
-    </table>
+    <div class="container-1">
+        <h1>library</h1>
+        <button class="add-book">add book</button>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>The Hobbit</td>
+                <td>J.R.R. Tolkien</td>
+                <td>295</td>
+                <td>not read yet</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container-2">    
+        <form action="#" method="post">
+            <div class="forminput">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="forminput">
+                <label for="author">Author</label>
+                <input type="text" id="author">
+            </div>
+            <div class="forminput">
+                <label for="pages">Pages</label>
+                <input type="text" id="pages">                
+            </div>
+            <div class="forminput">
+                <label for="status">Status</label>
+                <input type="text" id="status">
+            </div>    
+
+            <button class="add-to-library" type="button">add to library</button>
+
+        </form>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
