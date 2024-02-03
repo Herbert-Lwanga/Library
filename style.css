@@ -27,6 +27,16 @@ form{
     gap: 1rem;
 }
 
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+input[type="checkbox"]{
+    accent-color:var(--color-sage-green);
+}
 .forminput{
     display: flex;
     flex-direction: column;
@@ -41,7 +51,11 @@ table{
 }
 tr{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 9.375rem) repeat(2,3.125rem) 1.57rem;
+}
+
+.trash{
+    border: none;
 }
 
 .container-2{
@@ -55,6 +69,7 @@ tr{
     background-color: var(--color-muted-green);
     border-radius: 1rem;
     padding-bottom: 1rem;
+    padding-right: 0.5rem;
 }
 
 button{
@@ -72,11 +87,16 @@ button:hover{
 
 input[type="text"] {
     border-radius: 1rem;
-    border:4px dotted var(--color-dark-green);
+    border:1px solid var(--color-dark-green);
     background-color: var(--color-muted-yellow);
+    color: var(--color-dark-green);
 }
 
 input[type="text"]:focus {
     border: none;
 
+}
+
+svg{
+    fill: var(--color-muted-yellow);
 }

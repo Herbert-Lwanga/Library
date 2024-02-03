@@ -16,6 +16,7 @@
                 <th>Author</th>
                 <th>Pages</th>
                 <th>Status</th>
+                <th class="trash"></th>
             </tr>
         </table>
     </div>
@@ -35,7 +36,10 @@
             </div>
             <div class="forminput">
                 <label for="status">Status</label>
-                <input type="text" id="status">
+                <div class="checkbox">
+                    <div>read</div>
+                    <input type="checkbox" id="status">
+                </div>
             </div>    
 
             <button class="add-to-library" type="button">add to library</button>
