@@ -10,15 +10,7 @@
     <div class="container-1">
         <h1>library</h1>
         <button class="add-book">add book</button>
-        <table>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Pages</th>
-                <th>Status</th>
-                <th class="trash"></th>
-            </tr>
-        </table>
+        <div class="table_container"></div>
     </div>
     <div class="container-2">    
         <form action="#" method="post">
@@ -36,10 +28,15 @@
             </div>
             <div class="forminput">
                 <label for="status">Status</label>
+                <select name="Status" id="status">
+                    <option value="read">Read</option>
+                    <option value="not read">Not read</option>
+                </select>
+                <!-- <label for="status">Status</label>
                 <div class="checkbox">
                     <div>read</div>
-                    <input type="checkbox" id="status">
-                </div>
+                    <input type="checkbox" id="status" value="read">
+                </div> -->
             </div>    
 
             <button class="add-to-library" type="button">add to library</button>

@@ -85,7 +85,8 @@ button:hover{
     font-size: large;
 }
 
-input[type="text"] {
+input[type="text"],
+select {
     border-radius: 1rem;
     border:1px solid var(--color-dark-green);
     background-color: var(--color-muted-yellow);
@@ -99,4 +100,8 @@ input[type="text"]:focus {
 
 svg{
     fill: var(--color-muted-yellow);
+}
+
+.bdnone{
+    border: none;
 }
